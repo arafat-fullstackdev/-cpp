@@ -1,5 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+void myFunction(){
+    cout<<"Hello Function side"<<endl;
+}
 int main(){
 
     struct{
@@ -13,9 +17,11 @@ int main(){
     myStructure.myBool= true;
 
 
-    cout<<myStructure.disit<<endl;
-    cout<<myStructure.myString<<endl;
-    cout<<myStructure.myBool<<endl;
+    // cout<<myStructure.disit<<endl;
+    // cout<<myStructure.myString<<endl;
+    // cout<<myStructure.myBool<<endl;
+
+    myFunction();
 
     return 0;
 }
