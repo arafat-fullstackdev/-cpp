@@ -25,6 +25,15 @@ int returnValue(int a,int b){
  return a + b;
 }
 
+string returnString(string code){
+    return code + "My code Here";
+}
+
+//?Pass By Reference
+void changeValue(int &num){
+    num = 40;
+}
+
 int main(){
 
     // myCode();
@@ -36,6 +45,16 @@ int main(){
     //  defaultParam("Vladibostok");
     //  defaultParam();
 
-    cout<<returnValue(10,88)<<endl;;
+    // cout<<returnValue(10,88)<<endl;
+
+    // for(int i =0; i<5;i++){
+    //     cout<<returnString("Return String ")<<endl;
+    // }
+
+    int value =12;
+    cout<<value;
+    changeValue(value);
+    cout<<value<<endl;
+    
     return 0;
 }
