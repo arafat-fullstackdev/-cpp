@@ -34,6 +34,25 @@ void changeValue(int &num){
     num = 40;
 }
 
+//! parse array
+void parseArray(int myArray[5]){
+    for(int i =0; i<5;i++){
+        cout<<myArray[i]<<" "<<endl;
+    }
+}
+
+
+//? pass struct
+struct Car{
+    string model;
+    int year;
+    bool gps;
+};
+
+void myVehicle(Car C){
+ cout<<"Model:"<<C.model<<"Year: "<<C.year<<" "<<C.gps<<endl;
+}
+
 int main(){
 
     // myCode();
@@ -51,10 +70,17 @@ int main(){
     //     cout<<returnString("Return String ")<<endl;
     // }
 
-    int value =12;
-    cout<<value;
-    changeValue(value);
-    cout<<value<<endl;
-    
+    // int value =12;
+    // cout<<value;
+    // changeValue(value);
+    // cout<<value<<endl;
+
+
+    // int numberArray[5]={10,20,30,40,50};
+    // parseArray(numberArray);     
+
+    Car myCar={"Dunlop ",2008,true};
+
+    myVehicle(myCar);
     return 0;
 }
