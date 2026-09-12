@@ -49,8 +49,22 @@ struct Car{
     bool gps;
 };
 
-void myVehicle(Car C){
+void myVehicle(Car &C){
  cout<<"Model:"<<C.model<<"Year: "<<C.year<<" "<<C.gps<<endl;
+}
+
+//! function to Farhenit to celcious
+
+int toCelcious(float farhenheit){
+    return (0.5/0.9) * (farhenheit - 32.0);
+};
+
+//* Recursion  call
+void printHello(int n){
+ //base case
+ if(n == 0) return;
+ cout<<"Pront Hello"<<endl;
+ printHello(1);
 }
 
 int main(){
@@ -79,8 +93,21 @@ int main(){
     // int numberArray[5]={10,20,30,40,50};
     // parseArray(numberArray);     
 
-    Car myCar={"Dunlop ",2008,true};
+    // Car myCar={"Dunlop ",2008,true};
 
-    myVehicle(myCar);
+    // myVehicle(myCar); 
+
+    //? temperature
+
+    //set value farhenz
+    // float f_value = 100.8;
+
+    // int result = toCelcious(f_value);
+
+    // //Farhenit value
+    // cout<<"Given value: "<<f_value<<endl;
+    // cout<<"Convert value:"<<result<<endl;
+
+    printHello(5);
     return 0;
 }
