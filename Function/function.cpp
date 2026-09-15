@@ -67,6 +67,11 @@ void printHello(int n){
  printHello(1);
 }
 
+void pointeralue(){
+    int value=23;
+    string value1= "String";
+    cout<<&value<<" And "<<&value1<<endl;
+}
 int main(){
 
     // myCode();
@@ -108,6 +113,20 @@ int main(){
     // cout<<"Given value: "<<f_value<<endl;
     // cout<<"Convert value:"<<result<<endl;
 
-    printHello(5);
+    // printHello(5);
+    // pointeralue();
+
+    //? lambda
+    auto message = [](){
+        cout<<"Hello Lambda"<<endl;
+    };
+
+    auto add=[](int a, int b){
+        return a + b;
+    };
+    cout<<add(10,56);
+
+    
+    message();
     return 0;
 }
